@@ -69,7 +69,8 @@ html, body {
 }
 @media (min-width: 1400px) {
   .wrapper .container .contactinformation-bar {
-    display: flex;
+    display: grid;
+    grid-template-columns: auto auto auto;
   }
 }
 .wrapper .container .contactinformation-bar .content-box {
@@ -86,6 +87,7 @@ html, body {
 }
 .wrapper .container .contactinformation-bar .content-box.last {
   border: none;
+  margin-right: -3rem;
 }
 .wrapper .container .socialmedia-bar {
   grid-area: social;
@@ -306,5 +308,4 @@ html, body {
   bottom: 0;
   left: 0;
   z-index: -1;
-  border: solid 1px black;
 }

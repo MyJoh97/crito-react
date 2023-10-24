@@ -18,28 +18,16 @@
   border: 1px solid #191919;
   color: #F0EFE9;
 }
+@media (max-width: 1000px) {
+  .btn-yellow {
+    display: grid;
+    grid-template-columns: 1fr auto;
+    margin-top: 1rem;
+    padding: 12px 25px;
+  }
+}
 @media (min-width: 1200px) {
   .btn-yellow {
-    margin-right: 130px;
-  }
-}
-@media (min-width: 1500px) {
-  .btn-yellow {
-    margin-right: 190px;
-  }
-}
-@media (min-width: 1700px) {
-  .btn-yellow {
-    margin-right: 100px;
-  }
-}
-@media (min-width: 1800px) {
-  .btn-yellow {
-    margin-right: 0px;
-  }
-}
-@media (min-width: 2100px) {
-  .btn-yellow {
-    margin-right: 0px;
+    margin-right: 10px;
   }
 }

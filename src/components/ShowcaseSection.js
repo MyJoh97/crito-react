@@ -2,6 +2,7 @@ import React from 'react'
 import showcaseImage from '../images/showcase-image.svg';
 import linesShowcase from '../images/background-lines-showcase.png';
 import Buttons from './Assets/Buttons';
+// import TransparentBtn from './Assets/TransparentBtn';
 
 const ShowcaseSection = () => {
   return (
@@ -13,8 +14,8 @@ const ShowcaseSection = () => {
             <Buttons text="Get Consulting" url="/services/get-consulting" />
             <Buttons text="Learn More" url="/services/consulting" />
           </div>
-          {/* <img id="white-lines-showcase" src={linesShowcase} alt="Image of white lines in the background" /> */}
-          <img id="manShowcase" src={showcaseImage} alt="image of a man in a suit with a tablet" />
+          <img id="white-lines-showcase" src={linesShowcase} alt="Image of white lines in the background" />
+          <img id="manShowcase" src={showcaseImage} alt="A man in a suit with a tablet" />
         </div>
       </section>
   )

@@ -172,7 +172,7 @@ html, body {
 .showcase {
   background-color: #F0EFE9;
   position: relative;
-  z-index: -1;
+  z-index: 1;
   display: flex;
   justify-content: center;
   align-items: center;

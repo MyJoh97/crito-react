@@ -13,7 +13,7 @@ const Header = () => {
         <NavSection />
       
         
-        <ShowcaseSection />
+        
       
       
       

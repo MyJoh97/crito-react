@@ -1,0 +1,13 @@
+.advertising {
+  display: none;
+  overflow-x: hidden;
+}
+@media (min-width: 1200px) {
+  .advertising {
+    display: flex;
+    justify-content: center;
+    padding-top: 72px;
+    padding-bottom: 50px;
+    gap: 50px;
+  }
+}

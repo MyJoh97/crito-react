@@ -4,7 +4,8 @@ import critoLogo from '../images/logotype.svg';
 
 const NavSection = () => {
   return (
-    <>
+    
+
     <div className="wrapper">
       <div className="container">
         <button className="menu-bars"><i className="fa-solid fa-bars-staggered"></i></button>
@@ -44,7 +45,8 @@ const NavSection = () => {
         </div>
       </div>
     </div>
-      </>
+
+      
   )
 }
 

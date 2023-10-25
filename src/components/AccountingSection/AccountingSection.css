@@ -1,0 +1,205 @@
+.left-box {
+  display: flex;
+  flex-direction: row;
+  margin-left: auto;
+  margin-right: auto;
+  border: solid 1px RGBA(25, 25, 25, 0.2);
+  padding-top: 0;
+  height: auto;
+  width: auto;
+  position: relative;
+}
+@media (min-width: 800px) {
+  .left-box {
+    padding-top: 0;
+    margin-top: 25px;
+    height: auto;
+    width: auto;
+  }
+}
+@media (min-width: 1520px) {
+  .left-box {
+    padding-top: 81px;
+    padding-bottom: 216px;
+    height: 600px;
+    width: 1520px;
+    padding-left: 0;
+  }
+}
+@media (min-width: 1700px) {
+  .left-box {
+    padding-top: 81px;
+    padding-bottom: 216px;
+    height: 40rem;
+    width: 1520px;
+  }
+}
+.left-box .accounting {
+  margin-right: auto;
+  padding-left: 30px;
+  padding-right: 25px;
+}
+@media (min-width: 1200px) {
+  .left-box .accounting {
+    margin-right: block;
+    padding-left: 0;
+    padding-right: 0;
+    margin-left: 60px;
+    margin-right: 5rem;
+    height: 500px;
+    width: 70rem;
+    border: solid 1px black;
+  }
+}
+.left-box .accounting h4 {
+  font-family: inter;
+  font-size: 18px;
+  font-weight: 500;
+  color: #F94D1C;
+  opacity: 1;
+  text-align: center;
+}
+@media (min-width: 1200px) {
+  .left-box .accounting h4 {
+    text-align: left;
+    margin-top: 30px;
+    margin-bottom: -15px;
+  }
+}
+.left-box .accounting h2 {
+  text-align: center;
+  font-family: sans-serif;
+  font-size: 28px;
+  font-weight: bold;
+  text-align: center;
+}
+@media (min-width: 1200px) {
+  .left-box .accounting h2 {
+    font-size: 45px;
+    font-weight: bold;
+    text-align: left;
+    margin-top: 45px;
+    margin-bottom: -15px;
+  }
+}
+.left-box .right-side {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  margin-top: 17rem;
+  position: absolute;
+  margin-left: 1rem;
+}
+@media (min-width: 1200px) {
+  .left-box .right-side {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    grid-template-rows: 1fr 1fr;
+    -moz-column-gap: 110px;
+         column-gap: 110px;
+    margin-right: auto;
+    margin-bottom: auto;
+    margin-left: 0;
+    margin-top: 0;
+    position: relative;
+  }
+}
+@media (min-width: 1500px) {
+  .left-box .right-side {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    grid-template-rows: 1fr 1fr;
+    -moz-column-gap: 55px;
+         column-gap: 55px;
+    margin-right: 10rem;
+    margin-bottom: 110px;
+    border: solid 1px black;
+  }
+}
+@media (min-width: 1200px) {
+  .left-box .right-side .business {
+    padding: 20px;
+    text-align: left;
+  }
+}
+.left-box .right-side .business h5 {
+  font-family: sans-serif;
+  font-size: 18px;
+  font-weight: bold;
+  line-height: 33px;
+  color: #191919;
+  opacity: 1;
+  margin-top: 50px;
+}
+@media (min-width: 768px) {
+  .left-box .right-side .business h5 {
+    font-size: 22px;
+  }
+}
+.left-box .right-side .business p {
+  font-family: "inter";
+  font-size: 15px;
+  font-weight: normal;
+  text-align: left;
+  line-height: 25px;
+  color: RGBA(25, 25, 25, 0.7);
+}
+@media (min-width: 768px) {
+  .left-box .right-side .business p {
+    font-size: 16px;
+  }
+}
+.left-box .right-side .business p br {
+  display: none;
+}
+@media (min-width: 768px) {
+  .left-box .right-side .business p br {
+    display: block;
+  }
+}
+.left-box .right-side .business img {
+  margin-bottom: -28px;
+  margin-top: 35px;
+}
+
+.btn-business {
+  background-color: #F9D783;
+  border: 1px solid #F9D783;
+  color: #191919;
+  text-decoration: none;
+  padding: 12px 25px;
+  font-weight: 600;
+  font-size: 16px;
+  border-radius: 25px;
+}
+.btn-business i {
+  margin-left: 8px;
+  font-size: 0.9em;
+}
+.btn-business:hover {
+  background-color: #191919;
+  border: 1px solid #191919;
+  color: #F0EFE9;
+}
+
+.adv {
+  background-color: #F9D783;
+  border: 1px solid #F9D783;
+  color: #191919;
+  text-decoration: none;
+  display: flex;
+  justify-content: center;
+  padding-top: 16px;
+  margin-bottom: 12px;
+  font-weight: 600;
+  font-size: 16px;
+  border-radius: 40px;
+}
+@media (min-width: 1200px) {
+  .adv {
+    display: flex;
+    justify-content: center;
+    margin-top: 70px;
+    padding-top: 16px;
+    padding-bottom: 16px;
+  }
+}

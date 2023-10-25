@@ -171,6 +171,36 @@ html, body {
   transform: translate(calc(50% - 15px));
 }
 
+.section-title {
+  padding-top: 40px;
+  padding-bottom: 30px;
+}
+@media (min-width: 768px) {
+  .section-title {
+    padding-top: 120px;
+    padding-bottom: 90px;
+  }
+}
+.section-title p {
+  color: #F94D1C;
+  font-family: "inter", sans-serif;
+  font-size: 18px;
+  font-weight: 500;
+  margin-bottom: -18px;
+}
+.section-title h2 {
+  color: #191919;
+  font-family: "DM Sans", sans-serif;
+  font-weight: 700;
+  font-size: 45px;
+}
+
+.center-content {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
 .showcase {
   background-color: #F0EFE9;
   position: relative;

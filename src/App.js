@@ -5,7 +5,7 @@ import Header from './components/Header';
 import Body from './components/Body';
 import './components/LogosUnderShowcase/LogosUnderShowcase.css';
 import './components/AccountingSection/AccountingSection.css';
-
+import './components/About/About.css';
 
 
 function App() {

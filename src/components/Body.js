@@ -2,6 +2,7 @@ import React from 'react'
 import ShowcaseSection from './ShowcaseSection';
 import LogosUnderShowcase from './LogosUnderShowcase/LogosUnderShowcase';
 import AccountingSection from './AccountingSection/AccountingSection';
+import About from './About/About';
 
 function Body() {
   return (
@@ -10,7 +11,7 @@ function Body() {
       <ShowcaseSection />
       <LogosUnderShowcase />
       <AccountingSection />
-
+      <About />
       
     </>
   )

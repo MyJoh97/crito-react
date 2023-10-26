@@ -48,7 +48,6 @@
     margin-right: 5rem;
     height: 500px;
     width: 70rem;
-    border: solid 1px black;
   }
 }
 .left-box .accounting h4 {
@@ -112,7 +111,6 @@
          column-gap: 55px;
     margin-right: 10rem;
     margin-bottom: 110px;
-    border: solid 1px black;
   }
 }
 @media (min-width: 1200px) {

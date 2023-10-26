@@ -1,0 +1,300 @@
+.service-boxes {
+  background-color: #F0EFE9;
+  height: auto;
+  display: none;
+  justify-content: center;
+  position: relative;
+}
+@media (min-width: 1400px) {
+  .service-boxes {
+    display: flex;
+    height: 850px;
+    margin-top: 120px;
+  }
+}
+.service-boxes .container {
+  display: flex;
+  justify-content: center;
+  overflow-x: hidden;
+}
+.service-boxes .container .services {
+  display: none;
+  position: absolute;
+  height: 145px;
+  width: 504px;
+  text-align: left;
+  margin-top: 120px;
+  margin-left: auto;
+  margin-right: auto;
+}
+@media (min-width: 1200px) {
+  .service-boxes .container .services {
+    display: none;
+    position: absolute;
+    margin-right: 500px;
+    margin-left: -325px;
+    height: 145px;
+    width: 504px;
+  }
+}
+@media (min-width: 1400px) {
+  .service-boxes .container .services {
+    display: block;
+  }
+}
+@media (min-width: 2000px) {
+  .service-boxes .container .services {
+    position: absolute;
+    margin-right: 500px;
+    margin-left: -325px;
+    height: 145px;
+    width: 504px;
+  }
+}
+.service-boxes .container .services h6 {
+  color: #F94D1C;
+  font-size: 18px;
+  font-family: "inter";
+  font-weight: 500;
+  line-height: 22px;
+  margin-top: 0;
+}
+.service-boxes .container .services h3 {
+  color: #191919;
+  font-size: 45px;
+  font-family: sans-serif;
+  font-weight: bold;
+  line-height: 54px;
+  position: absolute;
+  margin-top: -21px;
+}
+.service-boxes .container .boxes {
+  display: none;
+  gap: 30px;
+  margin-top: 314px;
+  margin-left: 300px;
+  margin-bottom: auto;
+}
+@media (min-width: 1400px) {
+  .service-boxes .container .boxes {
+    display: block;
+    display: flex;
+    margin-left: auto;
+    margin-right: auto;
+  }
+}
+@media (min-width: 2000px) {
+  .service-boxes .container .boxes {
+    margin-left: 610px;
+    display: block;
+    display: flex;
+    margin-left: auto;
+    margin-right: auto;
+  }
+}
+.service-boxes .container .boxes .box1 {
+  display: block;
+  height: 333px;
+  width: 308px;
+  background-color: #ffffff;
+}
+.service-boxes .container .boxes .box1 h5 {
+  position: relative;
+  color: #191919;
+  font-family: dm sans-serif;
+  font-size: 22px;
+  font-weight: bold;
+  line-height: 33px;
+  margin-top: 84px;
+  margin-left: 30px;
+}
+.service-boxes .container .boxes .box1 h5::before {
+  content: "";
+  position: absolute;
+  top: -35px;
+  left: 0;
+  width: 38px;
+  height: 2px;
+  background-color: #191919;
+}
+.service-boxes .container .boxes .box1 p {
+  color: RGBA(25, 25, 25, 0.7);
+  font-size: 16px;
+  font-family: "inter";
+  font-weight: normal;
+  line-height: 28px;
+  position: relative;
+  margin-left: 30px;
+  margin-top: -25px;
+}
+.service-boxes .container .boxes .box2 {
+  background-color: #F9D783;
+  height: 333px;
+  width: 308px;
+}
+.service-boxes .container .boxes .box2 h5 {
+  position: relative;
+  color: #191919;
+  font-family: dm sans-serif;
+  font-size: 22px;
+  font-weight: bold;
+  line-height: 33px;
+  margin-top: 84px;
+  margin-left: 30px;
+}
+.service-boxes .container .boxes .box2 h5::before {
+  content: "";
+  position: absolute;
+  top: -35px;
+  left: 0;
+  width: 38px;
+  height: 2px;
+  background-color: #191919;
+}
+.service-boxes .container .boxes .box2 p {
+  color: RGBA(25, 25, 25, 0.7);
+  font-size: 16px;
+  font-family: "inter";
+  font-weight: normal;
+  line-height: 28px;
+  position: relative;
+  margin-left: 30px;
+  margin-top: -25px;
+}
+.service-boxes .container .boxes .box3 {
+  height: 333px;
+  width: 308px;
+  background-color: #ffffff;
+}
+.service-boxes .container .boxes .box3 h5 {
+  position: relative;
+  color: #191919;
+  font-family: dm sans-serif;
+  font-size: 22px;
+  font-weight: bold;
+  line-height: 33px;
+  margin-top: 84px;
+  margin-left: 30px;
+}
+.service-boxes .container .boxes .box3 h5::before {
+  content: "";
+  position: absolute;
+  top: -35px;
+  left: 0;
+  width: 38px;
+  height: 2px;
+  background-color: #191919;
+}
+.service-boxes .container .boxes .box3 p {
+  color: RGBA(25, 25, 25, 0.7);
+  font-size: 16px;
+  font-family: "inter";
+  font-weight: normal;
+  line-height: 28px;
+  position: relative;
+  margin-left: 30px;
+  margin-top: -25px;
+}
+.service-boxes .container .boxes .box4 {
+  display: block;
+  height: 333px;
+  width: 308px;
+  background-color: #ffffff;
+}
+.service-boxes .container .boxes .box4 h5 {
+  position: relative;
+  color: #191919;
+  font-family: dm sans-serif;
+  font-size: 22px;
+  font-weight: bold;
+  line-height: 33px;
+  margin-top: 84px;
+  margin-left: 30px;
+}
+.service-boxes .container .boxes .box4 h5::before {
+  content: "";
+  position: absolute;
+  top: -35px;
+  left: 0;
+  width: 38px;
+  height: 2px;
+  background-color: #191919;
+}
+.service-boxes .container .boxes .box4 p {
+  color: RGBA(25, 25, 25, 0.7);
+  font-size: 16px;
+  font-family: "inter";
+  font-weight: normal;
+  line-height: 28px;
+  position: relative;
+  margin-left: 30px;
+  margin-top: -25px;
+}
+.service-boxes .container .boxes .btn-round {
+  background-color: #191919;
+  border-radius: 50%;
+  padding: 18px 22px;
+  position: absolute;
+  margin-left: 215px;
+  margin-bottom: 48px;
+}
+.service-boxes .container .boxes .btn-round i {
+  color: #ffffff;
+  font-size: 21px;
+}
+.service-boxes .container .boxes .btn-round:hover {
+  transform: scale(1.1);
+  transition: transform 0.3s;
+  background-color: #6e6e6e;
+}
+.service-boxes .container .boxes .btn-round.second {
+  background-color: #ffffff;
+}
+.service-boxes .container .boxes .btn-round.second i {
+  color: #191919;
+}
+.service-boxes .container .boxes .highlight:hover {
+  height: 343px;
+  width: 318px;
+  transform: scale(1.05);
+  background-color: rgb(221, 219, 219);
+  transition: transform 0.8s;
+}
+.service-boxes .container .ser-btn {
+  display: none;
+  border: solid 1px #191919;
+  color: #191919;
+  background-color: transparent;
+  text-decoration: none;
+  font-family: "inter";
+  font-weight: normal;
+  padding: 16px 40px;
+  padding-right: 55px;
+  border-radius: 40px;
+  position: absolute;
+  margin-top: 710px;
+  text-align: center;
+}
+@media (min-width: 1400px) {
+  .service-boxes .container .ser-btn {
+    display: block;
+  }
+}
+.service-boxes .container .ser-btn i {
+  position: absolute;
+  margin-left: 9px;
+  margin-bottom: 11px;
+}
+.service-boxes .container .ser-btn:hover {
+  background-color: #2b2a2a;
+  color: #e6e6e6;
+}
+.service-boxes .container img {
+  width: 45.6rem;
+  height: 12.5rem;
+  position: absolute;
+  bottom: 0;
+  right: 0;
+  display: flex;
+  justify-content: center;
+}

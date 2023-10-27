@@ -1,0 +1,174 @@
+.article-and-news .container {
+  overflow: hidden;
+}
+.article-and-news .container .upper-title {
+  align-items: center;
+  margin-top: 2rem;
+  display: grid;
+  grid-template-columns: 1fr;
+  margin-right: 3rem;
+}
+@media (min-width: 768px) {
+  .article-and-news .container .upper-title {
+    margin-top: 0;
+    display: flex;
+    justify-content: center;
+    gap: 26rem;
+    margin-right: 0;
+  }
+}
+.article-and-news .container .upper-title .section-title {
+  text-align: center;
+  padding-left: 3rem;
+}
+@media (min-width: 768px) {
+  .article-and-news .container .upper-title .section-title {
+    text-align: left;
+    margin-left: -4rem;
+  }
+}
+.article-and-news .container .upper-title .section-title p {
+  font-size: 15px;
+}
+@media (min-width: 768px) {
+  .article-and-news .container .upper-title .section-title p {
+    font-size: 18px;
+  }
+}
+.article-and-news .container .upper-title .section-title h2 {
+  font-size: 30px;
+}
+@media (min-width: 768px) {
+  .article-and-news .container .upper-title .section-title h2 {
+    font-size: 45px;
+  }
+}
+@media (min-width: 768px) {
+  .article-and-news .container .upper-title .section-title h2 br {
+    display: none;
+  }
+}
+.article-and-news .container .upper-title .center-content {
+  margin-top: -1.5rem;
+  margin-bottom: 3rem;
+  margin-left: 3rem;
+}
+@media (min-width: 768px) {
+  .article-and-news .container .upper-title .center-content {
+    margin-top: 6rem;
+  }
+}
+.article-and-news .container .upper-title .center-content a {
+  background-color: #FFFFFF;
+  color: #191919;
+}
+.article-and-news .container .upper-title .center-content a:hover {
+  background-color: #191919;
+  color: #FFFFFF;
+}
+.article-and-news .container .upper-title .center-content a i {
+  font-weight: bold;
+}
+.article-and-news .container .news-section {
+  display: grid;
+  grid-template-columns: 1fr;
+}
+@media (min-width: 768px) {
+  .article-and-news .container .news-section {
+    display: flex;
+    justify-content: center;
+    margin-top: -80px;
+  }
+}
+.article-and-news .container .news-section .news-articles {
+  display: grid;
+  grid-template-columns: 1fr;
+  gap: 30px;
+}
+@media (min-width: 768px) {
+  .article-and-news .container .news-section .news-articles {
+    grid-template-columns: auto 1fr auto;
+  }
+}
+.article-and-news .container .news-section .news-articles .news {
+  text-decoration: none;
+}
+@media (min-width: 768px) {
+  .article-and-news .container .news-section .news-articles .news .paragraph-phone {
+    display: none;
+  }
+}
+.article-and-news .container .news-section .news-articles .news:hover {
+  text-decoration: underline;
+}
+.article-and-news .container .news-section .news-articles .news .image-container-dates {
+  position: relative;
+}
+.article-and-news .container .news-section .news-articles .news .image-container-dates .dates {
+  height: 64px;
+  width: 56px;
+  background-color: #F9D783;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  gap: -20px;
+  position: absolute;
+  z-index: 1;
+  top: 0;
+  margin-top: 15px;
+  margin-left: 15px;
+}
+.article-and-news .container .news-section .news-articles .news .image-container-dates .dates strong {
+  font-family: "dm", sans-serif;
+  font-size: 22px;
+  font-weight: bold;
+  color: #191919;
+  padding-top: 20px;
+}
+.article-and-news .container .news-section .news-articles .news .image-container-dates .dates p {
+  font-size: 16px;
+  font-family: "inter";
+  font-weight: normal;
+  color: RGBA(25, 25, 25, 0.7);
+  margin-top: -5px;
+}
+.article-and-news .container .news-section .news-articles .news p {
+  font-size: 16px;
+  font-family: "inter", sans-serif;
+  font-weight: normal;
+  line-height: 28px;
+  color: #6A6C71;
+}
+.article-and-news .container .news-section .news-articles .news strong {
+  font-family: "dm", sans-serif;
+  font-size: 22px;
+  font-weight: bold;
+  line-height: 33px;
+  color: #191919;
+}
+.article-and-news .container .circles {
+  display: flex;
+  justify-content: center;
+  margin-top: 30px;
+  margin-right: 2rem;
+  padding-bottom: 3rem;
+}
+@media (min-width: 768px) {
+  .article-and-news .container .circles {
+    margin-right: block;
+    padding-bottom: 0;
+    margin-top: 60px;
+  }
+}
+.article-and-news .container .circles .circle {
+  background-color: rgba(25, 25, 25, 0.2588235294);
+  width: 12px;
+  height: 12px;
+  border-radius: 50%;
+  display: inline-block;
+  margin-right: 10px;
+}
+.article-and-news .container .circles .dark {
+  background-color: #191919;
+}

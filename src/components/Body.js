@@ -8,6 +8,8 @@ import ChooseUs from './ChooseUs/ChooseUs';
 import ProjectAndCases from './ProjectAndCases/ProjectAndCases';
 import MeetOurTeam from './MeetOurTeam/MeetOurTeam';
 import Reviews from './Reviews/Reviews';
+import ArticleAndNews from './ArticleAndNews/ArticleAndNews';
+import NewsSignup from './NewsSignup/NewsSignup';
 
 function Body() {
   return (
@@ -22,7 +24,9 @@ function Body() {
       <ProjectAndCases />
       <MeetOurTeam />
       <Reviews />
-      
+      <ArticleAndNews />
+      <NewsSignup />
+
     </>
   )
 }

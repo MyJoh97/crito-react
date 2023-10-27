@@ -1,0 +1,202 @@
+.article-and-news {
+    
+
+  .container {
+    overflow: hidden;
+    
+
+    .upper-title {
+      align-items: center;
+      margin-top: 2rem;
+      display: grid;
+      grid-template-columns: 1fr;
+      margin-right: 3rem;
+      
+
+      @media (min-width: 768px) {
+        margin-top: 0;
+        display: flex;
+        justify-content: center;
+        gap: 26rem;
+        margin-right: 0;
+      }
+
+
+      .section-title {
+        text-align: center;
+        padding-left: 3rem;
+        
+
+        @media (min-width: 768px) {
+          text-align: left;
+          margin-left: -4rem; 
+        }
+
+        p {
+          font-size: 15px;
+
+          @media (min-width: 768px) {
+            font-size: 18px;
+          }
+        }
+
+        h2 {
+          font-size: 30px;
+
+          @media (min-width: 768px) {
+            font-size: 45px;
+          }
+
+          br {
+            @media (min-width: 768px) {
+              display: none;
+            }
+          }
+        }
+      }
+
+      .center-content {
+        margin-top: -1.5rem;
+        margin-bottom: 3rem;
+        margin-left: 3rem;
+        
+        @media (min-width: 768px) {
+          margin-top: 6rem;                   
+        }
+      
+        a {
+          background-color: #FFFFFF;
+          color: #191919;
+
+          &:hover {
+            background-color: #191919;
+            color: #FFFFFF;
+          }
+          
+          i {
+            font-weight: bold;
+          }
+        }
+      }
+
+    }
+
+    .news-section {
+      display: grid;
+      grid-template-columns: 1fr;
+      
+
+      @media (min-width: 768px) {
+        display: flex;
+        justify-content: center;
+        margin-top: -80px;
+      }
+
+      .news-articles {
+        display: grid;
+        grid-template-columns: 1fr;
+        gap: 30px;
+        
+        @media (min-width: 768px) {
+          grid-template-columns: auto 1fr auto;
+        }
+
+        .news {
+          text-decoration: none;
+          
+
+          .paragraph-phone {
+            @media (min-width: 768px) {
+              display: none;
+            }
+          }
+
+          &:hover {
+            text-decoration: underline;
+          }
+
+          .image-container-dates {
+            position: relative;
+            
+
+            .dates {
+              height: 64px;
+              width: 56px;
+              background-color: #F9D783;
+              display: flex;
+              flex-direction: column;
+              justify-content: center;
+              align-items: center;
+              gap: -20px;
+              position: absolute;
+              z-index: 1;
+              top: 0;
+              margin-top: 15px;
+              margin-left: 15px;
+
+              strong {
+                font-family: 'dm', sans-serif;
+                font-size: 22px;
+                font-weight: bold;
+                color: #191919;
+                padding-top: 20px;
+              }
+
+              p {
+                font-size: 16px;
+                font-family: 'inter';
+                font-weight: normal;
+                color: RGBA(25,25,25,0.7 );
+                margin-top: -5px;
+              }
+            }
+
+          }  
+
+          p {
+            font-size: 16px;
+            font-family: 'inter', sans-serif;
+            font-weight: normal;
+            line-height: 28px;
+            color: #6A6C71;
+          }
+
+          strong {
+            font-family: 'dm', sans-serif;
+            font-size: 22px;
+            font-weight: bold;
+            line-height: 33px;
+            color: #191919;
+          }
+        }
+      }
+    }
+    .circles {
+      display: flex;
+      justify-content: center;
+      margin-top: 30px;
+      margin-right: 2rem;
+      padding-bottom: 3rem;
+      
+      @media (min-width: 768px) {
+        margin-right: block;
+        padding-bottom: 0;
+        margin-top: 60px;
+      }
+
+      .circle {
+        background-color:  #19191942;
+        width: 12px;
+        height: 12px;
+        border-radius: 50%;
+        display: inline-block;
+        margin-right: 10px;
+      }
+
+      .dark {
+        background-color: #191919;
+      }
+
+    }
+  }
+}

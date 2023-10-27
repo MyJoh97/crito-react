@@ -68,6 +68,11 @@
   position: absolute;
   margin-top: -21px;
 }
+@media (min-width: 1000px) {
+  .service-boxes .container .services h3 {
+    margin-top: 0.5rem;
+  }
+}
 .service-boxes .container .boxes {
   display: none;
   gap: 30px;
@@ -125,7 +130,7 @@
   line-height: 28px;
   position: relative;
   margin-left: 30px;
-  margin-top: -25px;
+  margin-top: 1rem;
 }
 .service-boxes .container .boxes .box2 {
   background-color: #F9D783;
@@ -159,7 +164,7 @@
   line-height: 28px;
   position: relative;
   margin-left: 30px;
-  margin-top: -25px;
+  margin-top: 1rem;
 }
 .service-boxes .container .boxes .box3 {
   height: 333px;
@@ -193,7 +198,7 @@
   line-height: 28px;
   position: relative;
   margin-left: 30px;
-  margin-top: -25px;
+  margin-top: 1rem;
 }
 .service-boxes .container .boxes .box4 {
   display: block;
@@ -228,7 +233,7 @@
   line-height: 28px;
   position: relative;
   margin-left: 30px;
-  margin-top: -25px;
+  margin-top: 1rem;
 }
 .service-boxes .container .boxes .btn-round {
   background-color: #191919;

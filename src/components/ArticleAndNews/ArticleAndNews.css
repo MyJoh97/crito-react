@@ -37,6 +37,7 @@
 }
 .article-and-news .container .upper-title .section-title h2 {
   font-size: 30px;
+  margin-top: 25px;
 }
 @media (min-width: 768px) {
   .article-and-news .container .upper-title .section-title h2 {

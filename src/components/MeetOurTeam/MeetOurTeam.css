@@ -22,6 +22,8 @@
 }
 .meet-our-team .container .section-title h2 {
   font-size: 35px;
+  margin-top: 25px;
+  margin-bottom: 30px;
 }
 @media (min-width: 1400px) {
   .meet-our-team .container .section-title h2 {

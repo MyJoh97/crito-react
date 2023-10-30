@@ -30,7 +30,7 @@
 @media (min-width: 768px) {
   .news-updates .container .updates-title {
     margin-left: 20px;
-    margin-top: 0;
+    margin-top: 3rem;
   }
 }
 .news-updates .container .updates-title h2 {
@@ -53,7 +53,7 @@
   .news-updates .container .search-container {
     margin-left: 130px;
     display: block;
-    margin-top: 0;
+    margin-top: 3rem;
   }
 }
 .news-updates .container .search-container #search-input {

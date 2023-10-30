@@ -25,6 +25,25 @@ overflow: hidden;
     height: 950px;
   }
 
+  .section-title {
+    
+    h2 {
+      @media (min-width: 800px) {
+        margin-top: 30px;
+      }
+    }
+
+    @media (max-width: 800px) {
+      margin-top: 10px;
+    }
+
+    h2 {
+      @media (max-width: 800px) {
+        margin-top: 25px;
+      }
+    }
+  }
+
 .client-reviews {
   display: flex;
   flex-direction: column;
@@ -79,6 +98,12 @@ overflow: hidden;
         height: 70px;
         border: solid 2px #19191918;
         border-radius: 50%;
+      }
+    }
+
+    .reviewer-3 {
+      @media (min-width: 800px) {
+        margin-top: 6rem;
       }
     }
     

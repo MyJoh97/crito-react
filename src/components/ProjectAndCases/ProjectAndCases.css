@@ -8,6 +8,9 @@
 .project-and-case .container .section-title {
   text-align: center;
 }
+.project-and-case .container .section-title h2 {
+  margin-top: 25px;
+}
 .project-and-case .container .project-and-cases {
   display: grid;
   grid-template-columns: 1fr;
@@ -44,6 +47,7 @@
 .project-and-case .container .project-and-cases .project .readmore {
   margin-right: 15px;
   margin-bottom: 15px;
+  margin-top: 1.5rem;
   display: block;
   text-align: right;
   font-family: "Inter", sans-serif;

@@ -1,8 +1,8 @@
 import React from 'react'
 import showcaseImage from '../images/showcase-image.svg';
 import linesShowcase from '../images/background-lines-showcase.png';
-import Buttons from './Assets/Buttons';
-import TransparentBtn from './Assets/TransparentBtn';
+import Button from './Assets/Button';
+
 
 const ShowcaseSection = () => {
   return (
@@ -12,8 +12,8 @@ const ShowcaseSection = () => {
           <div className="content">
             <h1>We provide The<br /> Best business<br /> solutions</h1>
             <p>Establish your vision and value proposition and turn them into testable prototypes.</p>
-            <Buttons text="Get Consulting" url="/services/get-consulting" />
-            <TransparentBtn text="Learn More" url="/services/consulting" />
+            <Button type="yellow" title="Get Consulting" url="/services/get-consulting" />
+            <a class="btn-no-color" href="services.html">Learn More <i class="fa-regular fa-arrow-up-right"></i></a>
           </div>
           <img id="white-lines-showcase" src={linesShowcase} alt="Image of white lines in the background" />
           <img id="manShowcase" src={showcaseImage} alt="A man in a suit with a tablet" />

@@ -7,6 +7,10 @@
     
     .section-title {
       text-align: center;
+      
+      h2 {
+        margin-top: 25px;
+      }
      }
 
     .project-and-cases {
@@ -47,6 +51,7 @@
         .readmore {
           margin-right: 15px;
           margin-bottom: 15px;
+          margin-top: 1.5rem;
           display: block;
           text-align: right;
           font-family: 'Inter', sans-serif;

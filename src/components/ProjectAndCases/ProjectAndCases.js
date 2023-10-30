@@ -3,6 +3,7 @@ import articleOne from '../../images/article-image-1.png';
 import articleTwo from '../../images/article-image-2.png';
 import articleThree from '../../images/article-image-3.png';
 import articleFour from '../../images/article-image-4.png';
+import Button from '.././Assets/Button';
 
 function ProjectAndCases() {
   return (
@@ -35,7 +36,7 @@ function ProjectAndCases() {
         </a>
       </div>
       <div className="center-content">
-        <a className="btn-black" href="projects.html">All Recent Projects <i className="fa-regular fa-arrow-up-right"></i></a>
+        <Button type="black" title="All Recent Projects" url="/services/projects" />
       </div>
     </div>
   </section>

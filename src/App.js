@@ -1,6 +1,5 @@
 import './App.css';
-import './components/Assets/Buttons.css'
-import './components/Assets/TransparentBtn.css'
+import './components/Assets/Button.css'
 import Header from './components/Header';
 import Body from './components/Body';
 import Footer from './components/Footer/Footer';

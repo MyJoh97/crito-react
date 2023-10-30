@@ -4,6 +4,7 @@ import MemberTwo from '../../images/member-2.png';
 import MemberThree from '../../images/member-3.png';
 import MemberFour from '../../images/member-4.png';
 
+
 function MeetOurTeam() {
   return (
     <>

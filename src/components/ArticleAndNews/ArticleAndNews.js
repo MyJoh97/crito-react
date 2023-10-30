@@ -2,6 +2,7 @@ import React from 'react'
 import NewsOne from '../../images/news-1.png';
 import NewsTwo from '../../images/news-2.png';
 import NewsThree from '../../images/news-3.png';
+import Button from '../Assets/Button';
 
 function ArticleAndNews() {
   return (
@@ -13,7 +14,7 @@ function ArticleAndNews() {
         <h2>Get Every Single<br /> Articles & News</h2>
       </div>
       <div className="center-content">
-        <a className="btn-black" href="team.html">Browse Articles <i className="fa-regular fa-arrow-up-right"></i></a>
+        <Button title="Browse Articles" url="/services/articles" />
       </div>
     </div>
     <div className="news-section">

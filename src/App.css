@@ -317,6 +317,26 @@ html, body {
     padding-bottom: 10px;
   }
 }
+.showcase .container .content .btn-no-color {
+  text-decoration: none;
+  padding: 12px 25px;
+  border: solid 1px black;
+  background-color: transparent;
+  border-radius: 12px;
+  font-weight: 600;
+  font-size: 16px;
+  border-radius: 25px;
+  color: black;
+}
+.showcase .container .content .btn-no-color i {
+  margin-left: 8px;
+  font-size: 0.9em;
+  font-weight: bold;
+}
+.showcase .container .content .btn-no-color:hover {
+  color: #FFFFFF;
+  background-color: #191919;
+}
 .showcase .container #manShowcase {
   display: none;
 }

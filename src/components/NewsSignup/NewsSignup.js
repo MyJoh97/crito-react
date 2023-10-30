@@ -1,5 +1,6 @@
 import React from 'react'
 import blackLines from '../../images/black-lines.svg';
+import Button from '../Assets/Button';
 
 function NewsSignup() {
   return (
@@ -10,7 +11,7 @@ function NewsSignup() {
     </div>
     <div className="search-container">
       <input type="text" id="search-input" placeholder="username@domain.com" />
-      <a className="btn-yellow" href="Subscribe.html">Subscribe <i className="fa-regular fa-arrow-up-right"></i></a>
+      <Button type="yellow" title="Subscribe" url="/login" />
     </div>
     <img src={blackLines} alt="Image of black lines" />
   </div>

@@ -1,6 +1,7 @@
 import React from 'react'
 import linesRight from '../../images/background-lines-right.png';
 
+
 const ServiceBoxes = () => {
   return (
     <div className="service-boxes">

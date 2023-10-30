@@ -1,5 +1,6 @@
 import React from 'react'
 import OfficeWoman from '../../images/office-image.jpg';
+import Button from '.././Assets/Button';
 
 const About = () => {
   return (
@@ -21,7 +22,7 @@ const About = () => {
           <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Quisquam<br /> officiis quas assumenda esse obcaecati? Ex esse error voluptates<br /> iure vel totam eos.<br /> Lorem ipsum dolor sit amet consectetur adipisicing elit. Omnis<br /> esse quasi incidunt adipisci accusantium libero provident<br /> voluptate amet.</p>
         </div>
         <div className="buttons-line">
-          <a className="btn-business black" href="business.html">Learn More<i className="fa-regular fa-arrow-up-right"></i></a>
+          <Button title="Learn More" url="/learn-more" />
           <a className="btn-business white" href="intro-video.html"><i className="fa-sharp fa-solid fa-play"></i></a>
           <p className="press-video">Intro Video</p>
         </div>

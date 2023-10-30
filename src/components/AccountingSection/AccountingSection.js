@@ -4,6 +4,7 @@ import startup from '../../images/startup-business-icon.svg';
 import financialIcon from '../../images/financial-advice-icon.svg';
 import riskIcon from '../../images/risk-management-icon.svg';
 
+
 function AccountingSection() {
   return (
 
@@ -11,7 +12,7 @@ function AccountingSection() {
         <div className="accounting">
           <h4>Feautures</h4>
           <h2>Our Accounting is trusted by thousand of companies</h2>
-          <a className="btn-yellow adv" href="accounting.html">Learn More<i className="fa-regular fa-arrow-up-right"></i></a> 
+          <a className="btn-yellow adv" href="accounting.html">Learn More<i className="fa-regular fa-arrow-up-right"></i></a>
         </div>
           <div className="container right-side">
             <div className="business info">

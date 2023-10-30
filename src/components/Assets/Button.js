@@ -8,15 +8,15 @@ const Button = ({type, url, title}) => {
         return 'btn-yellow'
       case 'transparent':
         return 'btn-transparent'
-      case 'btn-black':
-        return 'btn-business black'
+      default:
+        return 'btn-black'
     }
   }
 
 
 
   return (
-    <a class="btn-transparent" href={url}>{title} <i className="fa-regular fa-arrow-up-right"></i></a>
+    <a class={getButtonClassName()} href={url}>{title} <i className="fa-regular fa-arrow-up-right"></i></a>
   )
 }
 

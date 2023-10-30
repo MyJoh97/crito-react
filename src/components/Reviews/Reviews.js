@@ -3,6 +3,7 @@ import star from '../../images/star-image.png';
 import pictureOne from '../../images/cassandra-warren.png';
 import pictureTwo from '../../images/amanda-tulling.png';
 import PictureThree from '../../images/jack-mcdogglas.png';
+import Button from '../Assets/Button';
 
 
 function Reviews() {
@@ -65,7 +66,7 @@ function Reviews() {
               </div>
             </div>
             <div className="center-content">
-              <a className="btn-black" href="team.html">All Reviews <i className="fa-regular fa-arrow-up-right"></i></a>
+              <Button type="black" title="All Reviews" url="/services/reviews" />
             </div>
         </div>
       </div>

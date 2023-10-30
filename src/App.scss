@@ -353,7 +353,28 @@ html, body {
           
         }
         
+      .btn-no-color {
+        text-decoration: none;
+        padding: 12px 25px;
+        border: solid 1px black;
+        background-color: transparent;
+        border-radius: 12px;
+        font-weight: 600;
+        font-size: 16px;
+        border-radius: 25px;
+        color: black;
+
+        i {
+          margin-left: 8px;
+          font-size: 0.9em;
+          font-weight: bold;
+        }
       
+        &:hover {
+          color: #FFFFFF;
+          background-color: #191919;
+        }
+      }
       
       }
 

@@ -19,7 +19,7 @@
 }
 .article-and-news .container .upper-title .section-title {
   text-align: center;
-  padding-left: 3rem;
+  padding-left: 3.5rem;
 }
 @media (min-width: 768px) {
   .article-and-news .container .upper-title .section-title {
@@ -53,6 +53,7 @@
   margin-top: -1.5rem;
   margin-bottom: 3rem;
   margin-left: 3rem;
+  width: 15rem;
 }
 @media (min-width: 768px) {
   .article-and-news .container .upper-title .center-content {

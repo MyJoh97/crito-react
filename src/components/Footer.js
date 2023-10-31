@@ -1,10 +1,11 @@
 import React from 'react'
-import logoConsulting from '../../images/logo-consulting.svg';
-import linesFooter from '../../images/lines-footer.svg';
+import logoConsulting from './../images/logo-consulting.svg';
+import linesFooter from './../images/lines-footer.svg';
 
 function Footer() {
   return (
-    <footer>
+    <>
+    <div className="footer">
   <div className="container">
   <div className="center-section">
     <div className="logotype-consulting">
@@ -64,7 +65,8 @@ function Footer() {
       <a href="https://linkedin.com/" target="_blank"><i className="fa-brands fa-linkedin"></i></a>
     </div>
   </div>
-</footer>
+</div>
+</>
   )
 }
 

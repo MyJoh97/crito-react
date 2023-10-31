@@ -10,7 +10,7 @@ const NavSection = () => {
       <div className="container">
         <button className="menu-bars"><i className="fa-solid fa-bars-staggered"></i></button>
         <div className="logotype">
-          <a href="index.html">
+          <a href="/Home">
             <img src={critoLogo} alt="crito logotype" />
           </a>
         </div>

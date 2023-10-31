@@ -1,0 +1,147 @@
+.contact-information {
+
+  .container {
+    display: grid;
+    grid-template-columns: 1fr;
+    gap: 1rem;
+
+
+    @media (min-width: 800px) {
+      display: flex;
+      justify-content: center;
+      gap: 30px;
+      margin-top: 8rem;
+    }
+    
+    .icon-location {
+      background-color: #191919;
+      height: 60px;
+      width: 60px;
+      border-radius: 50%;
+      position: relative;
+      position: absolute;
+      left: 2rem;
+      top: 1rem;
+
+      @media (min-width: 800px) {
+        left: 3.5rem;
+        top: 3rem;
+      }
+
+      &:hover {
+        cursor: pointer;
+      }
+
+      .icon-1, .icon-2, .icon-3 {
+        position: absolute;
+        left: 1.35rem;
+        top: 1.4rem;
+      }
+      
+    }
+
+    .visit {
+      border: solid 1px RGBA(25,25,25,0.2 );
+      height: 130px;
+      width: 371px;
+      display: flex;
+      flex-direction: column;
+      justify-content: center;
+      align-items: center;
+      position: relative;
+      margin-top: 1rem;
+
+      @media (min-width: 800px) {
+        height: 206px;
+        width: 420px;
+        margin-top: 0;
+      }
+
+
+      strong {
+        font-size: 22px;
+        font-family: sans-serif;
+        font-weight: bold;
+        line-height: 33px;
+        margin-right: 4rem;
+        margin-top: 1.4rem;
+      }
+
+      p {
+        font-family: 'inter';
+        font-size: 18px;
+        font-weight: normal;
+        line-height: 28px;
+        margin-left: 2rem;
+      }
+    }
+
+    .call {
+      border: solid 1px RGBA(25,25,25,0.2 );
+      height: 130px;
+      width: 371px;
+      display: flex;
+      flex-direction: column;
+      justify-content: center;
+      align-items: center;
+      position: relative;
+
+      @media (min-width: 800px) {
+        height: 206px;
+        width: 420px;
+      }
+
+      strong {
+        font-size: 22px;
+        font-family: sans-serif;
+        font-weight: bold;
+        line-height: 33px;
+        margin-right: 3.5rem;
+        margin-top: 1.4rem;
+      }
+
+      p {
+        font-family: 'inter';
+        font-size: 18px;
+        font-weight: normal;
+        line-height: 28px;
+        margin-left: 2rem;
+      }
+    }
+
+    .email {
+      border: solid 1px RGBA(25,25,25,0.2 );
+      height: 130px;
+      width: 371px;
+      display: flex;
+      flex-direction: column;
+      justify-content: center;
+      align-items: center;
+      position: relative;
+      text-align: left;
+
+      @media (min-width: 800px) {
+        height: 206px;
+        width: 420px;
+      }
+
+
+      strong {
+        font-size: 22px;
+        font-family: sans-serif;
+        font-weight: bold;
+        line-height: 33px;
+        margin-right: 3rem;
+        margin-top: 1.4rem;
+      }
+
+      p {
+        font-family: 'inter';
+        font-size: 18px;
+        font-weight: normal;
+        line-height: 28px;
+        margin-left: 2rem;
+      }
+    }
+  }
+}

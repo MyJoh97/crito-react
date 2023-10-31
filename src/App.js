@@ -10,8 +10,10 @@ import './components/MeetOurTeam/MeetOurTeam.css';
 import './components/Reviews/Reviews.css';
 import './components/ArticleAndNews/ArticleAndNews.css';
 import './components/NewsSignup/NewsSignup.css';
-
-
+import './components/ConnectSection/ConnectSection.css';
+import './components/InformationSection/InformationSection.css';
+import './components/MessageSection/MessageSection.css';
+import './components/MapSection/MapSection.css';
 
 function App() {
   return (

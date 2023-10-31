@@ -1,0 +1,133 @@
+.contact-information .container {
+  display: grid;
+  grid-template-columns: 1fr;
+  gap: 1rem;
+}
+@media (min-width: 800px) {
+  .contact-information .container {
+    display: flex;
+    justify-content: center;
+    gap: 30px;
+    margin-top: 8rem;
+  }
+}
+.contact-information .container .icon-location {
+  background-color: #191919;
+  height: 60px;
+  width: 60px;
+  border-radius: 50%;
+  position: relative;
+  position: absolute;
+  left: 2rem;
+  top: 1rem;
+}
+@media (min-width: 800px) {
+  .contact-information .container .icon-location {
+    left: 3.5rem;
+    top: 3rem;
+  }
+}
+.contact-information .container .icon-location:hover {
+  cursor: pointer;
+}
+.contact-information .container .icon-location .icon-1, .contact-information .container .icon-location .icon-2, .contact-information .container .icon-location .icon-3 {
+  position: absolute;
+  left: 1.35rem;
+  top: 1.4rem;
+}
+.contact-information .container .visit {
+  border: solid 1px RGBA(25, 25, 25, 0.2);
+  height: 130px;
+  width: 371px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  position: relative;
+  margin-top: 1rem;
+}
+@media (min-width: 800px) {
+  .contact-information .container .visit {
+    height: 206px;
+    width: 420px;
+    margin-top: 0;
+  }
+}
+.contact-information .container .visit strong {
+  font-size: 22px;
+  font-family: sans-serif;
+  font-weight: bold;
+  line-height: 33px;
+  margin-right: 4rem;
+  margin-top: 1.4rem;
+}
+.contact-information .container .visit p {
+  font-family: "inter";
+  font-size: 18px;
+  font-weight: normal;
+  line-height: 28px;
+  margin-left: 2rem;
+}
+.contact-information .container .call {
+  border: solid 1px RGBA(25, 25, 25, 0.2);
+  height: 130px;
+  width: 371px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  position: relative;
+}
+@media (min-width: 800px) {
+  .contact-information .container .call {
+    height: 206px;
+    width: 420px;
+  }
+}
+.contact-information .container .call strong {
+  font-size: 22px;
+  font-family: sans-serif;
+  font-weight: bold;
+  line-height: 33px;
+  margin-right: 3.5rem;
+  margin-top: 1.4rem;
+}
+.contact-information .container .call p {
+  font-family: "inter";
+  font-size: 18px;
+  font-weight: normal;
+  line-height: 28px;
+  margin-left: 2rem;
+}
+.contact-information .container .email {
+  border: solid 1px RGBA(25, 25, 25, 0.2);
+  height: 130px;
+  width: 371px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  position: relative;
+  text-align: left;
+}
+@media (min-width: 800px) {
+  .contact-information .container .email {
+    height: 206px;
+    width: 420px;
+  }
+}
+.contact-information .container .email strong {
+  font-size: 22px;
+  font-family: sans-serif;
+  font-weight: bold;
+  line-height: 33px;
+  margin-right: 3rem;
+  margin-top: 1.4rem;
+}
+.contact-information .container .email p {
+  font-family: "inter";
+  font-size: 18px;
+  font-weight: normal;
+  line-height: 28px;
+  margin-left: 2rem;
+}

@@ -1,0 +1,61 @@
+.connect {
+  overflow: hidden;
+  background-color: #F0EFE9;
+
+  .container {
+    height: 18rem;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    position: relative;
+   
+
+    .home-contact {
+      display: flex;
+      gap: 1rem;
+
+      @media (min-width: 800px) {
+        padding-top: 2rem;
+      }
+      
+
+      #different-font {
+        color: #191919;
+        font-size: 16px;
+        font-family: 'inter' sans-serif;
+        font-weight: 300;
+      }
+
+      p {
+        color: #191919;
+        font-size: 16px;
+        font-family: 'inter' sans-serif;
+        font-weight: 500;
+      }
+    }
+
+    h2 {
+      color: #191919;
+      font-size: 40px;
+      font-family: 'dm' sans-serif;
+      font-weight: bold;
+
+      @media (min-width: 800px) {
+        margin-top: 0;
+        font-size: 56px;
+      }
+    }
+
+    img {
+      display: none;
+      position: absolute;
+      bottom: 0;
+      left: 0;
+
+      @media (min-width: 800px) {
+        display: flex;
+      }
+    }
+  }
+}

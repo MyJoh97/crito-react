@@ -16,7 +16,7 @@ const Button = ({type, url, title}) => {
 
 
   return (
-    <a class={getButtonClassName()} href={url}>{title} <i className="fa-regular fa-arrow-up-right"></i></a>
+    <a className={getButtonClassName()} href={url}>{title} <i className="fa-regular fa-arrow-up-right"></i></a>
   )
 }
 

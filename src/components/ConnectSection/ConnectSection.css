@@ -1,0 +1,56 @@
+.connect {
+  overflow: hidden;
+  background-color: #F0EFE9;
+}
+.connect .container {
+  height: 18rem;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  position: relative;
+}
+.connect .container .home-contact {
+  display: flex;
+  gap: 1rem;
+}
+@media (min-width: 800px) {
+  .connect .container .home-contact {
+    padding-top: 2rem;
+  }
+}
+.connect .container .home-contact #different-font {
+  color: #191919;
+  font-size: 16px;
+  font-family: "inter" sans-serif;
+  font-weight: 300;
+}
+.connect .container .home-contact p {
+  color: #191919;
+  font-size: 16px;
+  font-family: "inter" sans-serif;
+  font-weight: 500;
+}
+.connect .container h2 {
+  color: #191919;
+  font-size: 40px;
+  font-family: "dm" sans-serif;
+  font-weight: bold;
+}
+@media (min-width: 800px) {
+  .connect .container h2 {
+    margin-top: 0;
+    font-size: 56px;
+  }
+}
+.connect .container img {
+  display: none;
+  position: absolute;
+  bottom: 0;
+  left: 0;
+}
+@media (min-width: 800px) {
+  .connect .container img {
+    display: flex;
+  }
+}

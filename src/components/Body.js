@@ -11,6 +11,7 @@ import Reviews from './Reviews/Reviews';
 import ArticleAndNews from './ArticleAndNews/ArticleAndNews';
 import NewsSignup from './NewsSignup/NewsSignup';
 
+
 function Body() {
   return (
     <>

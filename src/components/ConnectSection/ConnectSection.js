@@ -3,7 +3,6 @@ import BackgroundLinesShowcase from '../../images/background-lines-showcase.png'
 
 const ConnectSection = () => {
   return (
-    <>
     <section className="connect">
       <div className="container">
         <div className="home-contact">
@@ -14,7 +13,6 @@ const ConnectSection = () => {
           <img id="white-lines-showcase" src={BackgroundLinesShowcase} alt="Image of white lines in the background" />
       </div>
     </section>
-    </>
   )
 }
 

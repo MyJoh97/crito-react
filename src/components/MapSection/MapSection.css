@@ -1,0 +1,14 @@
+.map-image {
+  display: flex;
+  justify-content: center;
+  margin-top: 1rem;
+}
+@media (min-width: 800px) {
+  .map-image {
+    margin-top: 7rem;
+  }
+}
+.map-image img {
+  max-width: 100%;
+  width: 100vh;
+}

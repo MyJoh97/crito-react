@@ -38,7 +38,16 @@
   width: auto;
   margin-top: 2rem;
 }
-.leave-message-information .container .background-section .search-container form #search-input {
+.leave-message-information .container .background-section .search-container form #search-input-name {
+  margin-left: 10rem;
+  margin-right: 10rem;
+  margin-bottom: 1rem;
+  padding: 20px 50px;
+  border-radius: 40px;
+  border: none;
+  outline: none;
+}
+.leave-message-information .container .background-section .search-container form #search-input-email {
   margin-left: 10rem;
   margin-right: 10rem;
   margin-bottom: 1rem;

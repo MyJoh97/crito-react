@@ -41,12 +41,14 @@
     }
 
     .search-container {
-      display: flex;
-      justify-content: center;
-      flex-direction: column;
-      width: auto;
-      margin-top: 2rem;
+    
       
+      form {
+        display: flex;
+        justify-content: center;
+        flex-direction: column;
+        width: auto;
+        margin-top: 2rem;
 
       #search-input {
         margin-left: 10rem;
@@ -84,6 +86,7 @@
           font-weight: bold;
           position: absolute;
         }
+      }
       }
     }
   }

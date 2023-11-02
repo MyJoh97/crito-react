@@ -31,14 +31,14 @@
     line-height: 55px;
   }
 }
-.leave-message-information .container .background-section .search-container {
+.leave-message-information .container .background-section .search-container form {
   display: flex;
   justify-content: center;
   flex-direction: column;
   width: auto;
   margin-top: 2rem;
 }
-.leave-message-information .container .background-section .search-container #search-input {
+.leave-message-information .container .background-section .search-container form #search-input {
   margin-left: 10rem;
   margin-right: 10rem;
   margin-bottom: 1rem;
@@ -47,7 +47,7 @@
   border: none;
   outline: none;
 }
-.leave-message-information .container .background-section .search-container #search-input-message {
+.leave-message-information .container .background-section .search-container form #search-input-message {
   margin-left: 10rem;
   margin-right: 10rem;
   margin-bottom: 1rem;
@@ -58,7 +58,7 @@
   border: none;
   outline: none;
 }
-.leave-message-information .container .background-section .search-container a {
+.leave-message-information .container .background-section .search-container form a {
   margin-left: 10rem;
   margin-right: 10rem;
   margin-top: 2rem;
@@ -68,7 +68,7 @@
   border-radius: 40px;
   border: none;
 }
-.leave-message-information .container .background-section .search-container a i {
+.leave-message-information .container .background-section .search-container form a i {
   font-weight: bold;
   position: absolute;
 }

@@ -8,18 +8,40 @@ const MessageSection = () => {
   const [email, setEmail] = useState('')
   const [message, setMessage] = useState('')
   const [error, setError] = useState('')
+  const [nameError, setNameError] = useState('')
 
-  const handleSubmit = (e) => {
+  const handleSubmit = async (e) => {
     e.preventDefault()
+    
+    const user = {name, email, message}
+    const json = JSON.stringify(user)
+    
+    const result = await fetch('https://win23-assignment.azurewebsites.net/api/contactform', {
+      method: 'post',
+      headers: {
+        'content-type': 'application/json'
+      },
+      body: json
+    })
 
-    console.log(email + ' | ' + message)
+    switch (result.status) {
+      case 200:
+        console.log('Meddelandet skickades')
+        break;
+      case 400:
+        console.log(`Meddelandet kunde inte skickas. Felmeddelandet är: ${await result.text()}`)
+      default:
+    }
 
-    if (!message) {
+    /*if (!message) {
       setError(<p className="errorMessage">Message is empty. Please type a message.</p>)
     } else {
       setError('')
-    }
-  }
+    } */
+  };
+
+ 
+
   return (
     <div className="leave-message-information">
       <div className="container">
@@ -28,7 +50,7 @@ const MessageSection = () => {
             <h2>Leave us a message<br/> for any information.</h2>
           </div>
           <div className="search-container">
-            <form>
+            <form onSubmit={handleSubmit} noValidate>
               <input type="text" id="search-input-name" placeholder="Name*" value={name} onChange={ (e) => setName(e.target.value)} />
               <input type="text" id="search-input-email" placeholder="Email*" value={email} onChange={ (e) => setEmail(e.target.value)} />
               <input type="text" id="search-input-message" placeholder="Your Message*" value={message} onChange={ (e) => setMessage(e.target.value)} />

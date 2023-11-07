@@ -50,6 +50,12 @@
         width: auto;
         margin-top: 2rem;
 
+        .errorMessage {
+          text-align: center;
+          margin-bottom: 30px;
+          color: rgb(199, 22, 22);
+        }
+
       #search-input-name {
         margin-left: 10rem;
         margin-right: 10rem;

@@ -7,11 +7,12 @@ const MessageSection = () => {
   const [name, setName] = useState('')
   const [email, setEmail] = useState('')
   const [message, setMessage] = useState('')
-  const [error, setError] = useState('')
-  const [nameError, setNameError] = useState('')
+  const [errorMessage, setErrorMessage] = useState('')
+
 
   const handleSubmit = async (e) => {
     e.preventDefault()
+    setErrorMessage('')
     
     const user = {name, email, message}
     const json = JSON.stringify(user)
@@ -26,18 +27,12 @@ const MessageSection = () => {
 
     switch (result.status) {
       case 200:
-        console.log('Meddelandet skickades')
+        console.log('The message has been sent.')
         break;
       case 400:
-        console.log(`Meddelandet kunde inte skickas. Felmeddelandet är: ${await result.text()}`)
+        setErrorMessage('Please fill out all the required fields.')
       default:
     }
-
-    /*if (!message) {
-      setError(<p className="errorMessage">Message is empty. Please type a message.</p>)
-    } else {
-      setError('')
-    } */
   };
 
  
@@ -51,11 +46,12 @@ const MessageSection = () => {
           </div>
           <div className="search-container">
             <form onSubmit={handleSubmit} noValidate>
+              <p className="errorMessage">{errorMessage}</p>
               <input type="text" id="search-input-name" placeholder="Name*" value={name} onChange={ (e) => setName(e.target.value)} />
               <input type="text" id="search-input-email" placeholder="Email*" value={email} onChange={ (e) => setEmail(e.target.value)} />
               <input type="text" id="search-input-message" placeholder="Your Message*" value={message} onChange={ (e) => setMessage(e.target.value)} />
               
-              {error}
+            
 
               <a className="btn-yellow" href="Subscribe.html" type="submit" onClick={handleSubmit}>Send Message <i className="fa-regular fa-arrow-up-right"></i></a>
             </form>

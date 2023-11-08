@@ -12,6 +12,7 @@
 @media (min-width: 800px) {
   .leave-message-information .container .background-section {
     margin-top: 5rem;
+    height: 940px;
   }
 }
 .leave-message-information .container .background-section .leave-message-headline {
@@ -76,6 +77,14 @@
   border-radius: 40px;
   border: none;
   outline: none;
+}
+.leave-message-information .container .background-section .search-container form .error-border {
+  background-color: rgba(128, 128, 128, 0.158);
+}
+.leave-message-information .container .background-section .search-container form .error {
+  margin-left: 10rem;
+  margin-bottom: 0.5rem;
+  color: rgb(199, 2, 2);
 }
 .leave-message-information .container .background-section .search-container form a {
   margin-left: 10rem;

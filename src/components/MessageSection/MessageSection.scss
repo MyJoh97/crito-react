@@ -17,6 +17,7 @@
 
       @media (min-width: 800px) {
         margin-top: 5rem;
+        height: 940px;
       }
       
       
@@ -41,7 +42,7 @@
     }
 
     .search-container {
-        
+
       
       form {
         display: flex;
@@ -92,6 +93,16 @@
         border-radius: 40px;
         border: none;
         outline: none;
+      }
+
+      .error-border {
+        background-color: rgba(128, 128, 128, 0.158);
+      }
+
+      .error {
+        margin-left: 10rem;
+        margin-bottom: 0.5rem;
+        color: rgb(199, 2, 2);
       }
 
       a {

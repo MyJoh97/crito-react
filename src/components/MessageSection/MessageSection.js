@@ -108,6 +108,7 @@ const MessageSection = () => {
                 placeholder="Name*"
                 value={name}
                 onChange={(e) => handleChange(e)}
+                className={nameError ? 'error-border' : ''}
               />
               <label className={emailError ? 'error' : 'hidden'}>
                 {emailError && email.length === 0 ? 'Email must be entered' : (emailError && !email.includes('@') ? 'Invalid email' : '')}
@@ -119,6 +120,7 @@ const MessageSection = () => {
                 placeholder="Email*"
                 value={email}
                 onChange={(e) => handleChange(e)}
+                className={emailError ? 'error-border' : ''}
               />
               <label className={messageError ? 'error' : 'hidden'}>
                 {messageError && message.length < 10 ? 'The message has to be at least 10 characters' : ''}
@@ -130,6 +132,7 @@ const MessageSection = () => {
                 placeholder="Your Message*"
                 value={message}
                 onChange={(e) => handleChange(e)}
+                className={messageError ? 'error-border' : ''}
               />
               <a className="btn-yellow" href="Subscribe.html" onClick={handleSubmit}>
                 Send Message <i className="fa-regular fa-arrow-up-right"></i>

@@ -38,6 +38,11 @@
   width: auto;
   margin-top: 2rem;
 }
+.leave-message-information .container .background-section .search-container form .sentMessage {
+  text-align: center;
+  margin-bottom: 30px;
+  color: rgb(27, 155, 27);
+}
 .leave-message-information .container .background-section .search-container form .errorMessage {
   text-align: center;
   margin-bottom: 30px;

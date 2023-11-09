@@ -39,7 +39,7 @@ const NavSection = () => {
           <nav>
             <NavLink to="/">Home</NavLink>
             <a href="services.html">Service</a>
-            <a href="news.html">News</a>
+            <NavLink to="/News">News</NavLink>
             <NavLink to="/Contacts">Contact</NavLink>
           </nav>
           <a className="btn-yellow" href="login.html">Login <i className="fa-regular fa-arrow-up-right"></i></a>

@@ -13,7 +13,7 @@ const ShowcaseSection = () => {
             <h1>We provide The<br /> Best business<br /> solutions</h1>
             <p>Establish your vision and value proposition and turn them into testable prototypes.</p>
             <Button type="yellow" title="Get Consulting" url="/services/get-consulting" />
-            <a class="btn-no-color" href="services.html">Learn More <i class="fa-regular fa-arrow-up-right"></i></a>
+            <a className="btn-no-color" href="services.html">Learn More <i className="fa-regular fa-arrow-up-right"></i></a>
           </div>
           <img id="white-lines-showcase" src={linesShowcase} alt="Image of white lines in the background" />
           <img id="manShowcase" src={showcaseImage} alt="A man in a suit with a tablet" />

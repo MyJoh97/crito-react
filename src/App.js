@@ -15,6 +15,7 @@ import './components/InformationSection/InformationSection.css';
 import './components/MessageSection/MessageSection.css';
 import './components/MapSection/MapSection.css';
 import './components/NewsAndArticleSection/NewsAndArticleSection.css';
+import './components/OurNewsSection/OurNewsSection.css';
 
 function App() {
   return (

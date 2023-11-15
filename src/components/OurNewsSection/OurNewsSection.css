@@ -1,28 +1,31 @@
-.news-title h3 {
+.news-and-articles {
+  margin-top: 5rem;
+  margin-bottom: 4rem;
+}
+.news-and-articles .container .news-title h3 {
   font-family: sans-serif;
   font-size: 45px;
 }
-
-.articles {
+.news-and-articles .container .articles {
   display: grid;
   grid-template-columns: auto 1fr auto;
   gap: 2rem;
 }
-.articles .news {
+.news-and-articles .container .articles .news {
   text-decoration: none;
 }
 @media (min-width: 768px) {
-  .articles .news .paragraph-phone {
+  .news-and-articles .container .articles .news .paragraph-phone {
     display: none;
   }
 }
-.articles .news:hover {
+.news-and-articles .container .articles .news:hover {
   text-decoration: underline;
 }
-.articles .news .image-container-dates {
+.news-and-articles .container .articles .news .image-container-dates {
   position: relative;
 }
-.articles .news .image-container-dates .dates {
+.news-and-articles .container .articles .news .image-container-dates .dates {
   height: 64px;
   width: 56px;
   background-color: #F9D783;
@@ -37,31 +40,53 @@
   margin-top: 15px;
   margin-left: 15px;
 }
-.articles .news .image-container-dates .dates strong {
+.news-and-articles .container .articles .news .image-container-dates .dates strong {
   font-family: "dm", sans-serif;
   font-size: 22px;
   font-weight: bold;
   color: #191919;
   padding-top: 20px;
 }
-.articles .news .image-container-dates .dates p {
+.news-and-articles .container .articles .news .image-container-dates .dates p {
   font-size: 16px;
   font-family: "inter";
   font-weight: normal;
   color: RGBA(25, 25, 25, 0.7);
   margin-top: -5px;
 }
-.articles .news p {
+.news-and-articles .container .articles .news p {
   font-size: 16px;
   font-family: "inter", sans-serif;
   font-weight: normal;
   line-height: 28px;
   color: #6A6C71;
 }
-.articles .news strong {
+.news-and-articles .container .articles .news strong {
   font-family: "dm", sans-serif;
   font-size: 22px;
   font-weight: bold;
   line-height: 33px;
   color: #191919;
+}
+.news-and-articles .container .number-box {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin-top: 3rem;
+}
+.news-and-articles .container .number-box .small-boxes .small-box {
+  border: solid 1px #EAE9F2;
+  border-radius: 5px;
+  width: 38px;
+  height: 38px;
+  text-align: center;
+  line-height: 35px;
+  margin: 0 5px;
+}
+.news-and-articles .container .number-box .small-boxes .small-box:hover {
+  cursor: pointer;
+}
+.news-and-articles .container .number-box .small-boxes #black-box {
+  background-color: #191919;
+  color: #FFFFFF;
 }

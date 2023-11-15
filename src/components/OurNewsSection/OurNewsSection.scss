@@ -1,4 +1,12 @@
+.news-and-articles {
+  margin-top: 5rem;
+  margin-bottom: 4rem;
+
+  .container {
+    
+
 .news-title {
+  
   
   h3 {
     font-family: sans-serif;
@@ -79,5 +87,36 @@
     line-height: 33px;
     color: #191919;
   }
+}
+}
+
+.number-box {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin-top: 3rem;
+
+.small-boxes {
+
+  .small-box {
+    border: solid 1px #EAE9F2;
+    border-radius: 5px;
+    width: 38px;
+    height: 38px;
+    text-align: center;
+    line-height: 35px;
+    margin: 0 5px;  
+
+    &:hover {
+      cursor: pointer;
+    }
+  }
+
+  #black-box {
+    background-color: #191919;
+    color: #FFFFFF;
+  }
+}
+}
 }
 }

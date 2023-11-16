@@ -1,23 +1,22 @@
-import React from 'react'
+import React from 'react';
+import { Link } from 'react-router-dom';
 
-const ArticleBoxes = ({imageSrc, day, month, section, title, text}) => {
+const ArticleBoxes = ({ imageSrc, section, title, text, selection, onClick }) => {
+  const newsDetailsUrl = `/NewsDetails/${selection}`;
+
   return (
-    <a className="news" href="#">
+    <Link to={newsDetailsUrl} className="news">
       <div className="image-container-dates">
-        <img src={imageSrc} alt="picture of a woman sitting in an office beside a table" />
-          <div className="dates">
-            <strong>{day}</strong>
-            <p>{month}</p>
-          </div>
-      </div>
+        <img src={imageSrc} alt="Office environment" />
         <p>{section}</p>
         <strong>{title}</strong>
         <p>{text}</p>
-    </a>
-  )
-}
+      </div>
+    </Link>
+  );
+};
 
-export default ArticleBoxes
+export default ArticleBoxes;
 
 
 /*

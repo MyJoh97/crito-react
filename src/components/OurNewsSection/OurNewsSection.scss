@@ -19,8 +19,9 @@
 
 .articles {
   display: grid;
-  grid-template-columns: auto 1fr auto;
+  grid-template-columns: auto auto auto;
   gap: 2rem;
+ 
 
 .news {
   text-decoration: none;
@@ -37,7 +38,14 @@
   }
 
   .image-container-dates {
-    position: relative;
+    // position: relative;
+    
+
+    img {
+      height: 100%;
+      width: 100%;
+    }
+    
     
 
     .dates {

@@ -12,7 +12,7 @@
 }
 .news-and-articles .container .articles {
   display: grid;
-  grid-template-columns: auto 1fr auto;
+  grid-template-columns: auto auto auto;
   gap: 2rem;
 }
 .news-and-articles .container .articles .news {
@@ -26,8 +26,9 @@
 .news-and-articles .container .articles .news:hover {
   text-decoration: underline;
 }
-.news-and-articles .container .articles .news .image-container-dates {
-  position: relative;
+.news-and-articles .container .articles .news .image-container-dates img {
+  height: 100%;
+  width: 100%;
 }
 .news-and-articles .container .articles .news .image-container-dates .dates {
   height: 64px;

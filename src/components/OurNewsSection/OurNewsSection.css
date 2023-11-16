@@ -2,9 +2,13 @@
   margin-top: 5rem;
   margin-bottom: 4rem;
 }
+.news-and-articles .container .news-title {
+  margin-bottom: 2rem;
+}
 .news-and-articles .container .news-title h3 {
   font-family: sans-serif;
   font-size: 45px;
+  font-weight: bold;
 }
 .news-and-articles .container .articles {
   display: grid;
@@ -85,6 +89,8 @@
 }
 .news-and-articles .container .number-box .small-boxes .small-box:hover {
   cursor: pointer;
+  background-color: #191919;
+  color: #ffffff;
 }
 .news-and-articles .container .number-box .small-boxes #black-box {
   background-color: #191919;

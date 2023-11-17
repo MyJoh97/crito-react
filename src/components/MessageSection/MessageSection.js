@@ -10,48 +10,72 @@ const MessageSection = () => {
   const [errorMessage, setErrorMessage] = useState('');
   const [sentMessage, setSentMessage] = useState('');
 
-  const handleSubmit = async (e) => {
-    e.preventDefault();
-    setErrorMessage('');
-    setSentMessage('');
-
-    setNameError(validateLength(name));
-    setEmailError(!validateEmail(email));
-    setMessageError(validateMessageLength(message));
-
-    if (nameError || emailError || messageError) {
-      setErrorMessage('Please fill out all the required fields correctly.');
-      return;
-    }
-
-    const user = { name, email, message };
-    const json = JSON.stringify(user);
-
-    const result = await fetch('https://win23-assignment.azurewebsites.net/api/contactform', {
-      method: 'post',
-      headers: {
-        'content-type': 'application/json'
-      },
-      body: json
-    });
-
-    switch (result.status) {
-      case 200:
-        clearForm();
-        setSentMessage('The message has been sent.');
-        break;
-      case 400:
-        setErrorMessage('Please fill out all the required fields.');
-        break;
-      default:
-        break;
-    }
-  };
-
   const clearForm = () => {
     setName('');
     setEmail('');
     setMessage('');
+  };
+
+  const validateLength = (value, minLength) => {
+    return value.length < minLength;
+  };
+
+  const validateEmail = (email) => {
+    return email.includes('@') && email.length >= 5;
+  };
+
+  const validateMessageLength = (message) => {
+    return message.length < 10;
+  };
+
+  const handleSubmit = async (e) => {
+    try {
+      e.preventDefault();
+      setErrorMessage('');
+      setSentMessage('');
+
+      console.log('Before validation', { name, email, message, nameError, emailError, messageError });
+
+      setNameError(validateLength(name, 2));
+      setEmailError(!validateEmail(email));
+      setMessageError(validateMessageLength(message));
+
+      console.log('After validation', { name, email, message, nameError, emailError, messageError });
+
+      if (nameError || emailError || messageError) {
+        setErrorMessage('Please fill out all the required fields correctly.');
+        return;
+      }
+
+      console.log('Before API call', { name, email, message });
+
+      const result = await fetch('https://win23-assignment.azurewebsites.net/api/contactform', {
+        method: 'post',
+        headers: {
+          'content-type': 'application/json',
+        },
+        body: JSON.stringify({ name, email, message }),
+      });
+
+      console.log('After API call', result);
+
+      switch (result.status) {
+        case 200:
+          console.log('Form successfully submitted!');
+          clearForm(); // Rensa formulärfälten här
+          break;
+        case 400:
+          const errorResponse = await result.json();
+          setErrorMessage(errorResponse.message);
+          break;
+        default:
+          console.log('Unhandled status:', result.status);
+          break;
+      }
+    } catch (error) {
+      console.error('An error occurred while processing the form:', error);
+      setErrorMessage('An error occurred while processing the form. Please try again.');
+    }
   };
 
   const handleChange = (e) => {
@@ -73,18 +97,6 @@ const MessageSection = () => {
     }
   };
 
-  const validateLength = (value) => {
-    return value.length === 0;
-  };
-
-  const validateEmail = (email) => {
-    return email.includes('@') && email.length >= 5;
-  };
-
-  const validateMessageLength = (message) => {
-    return message.length < 10;
-  };
-
   return (
     <div className="leave-message-information">
       <div className="container">
@@ -96,7 +108,7 @@ const MessageSection = () => {
             <form onSubmit={handleSubmit} noValidate>
               <p className="sentMessage">{sentMessage}</p>
               <p className="errorMessage">{errorMessage}</p>
-              
+
               <label className={nameError ? 'error' : 'hidden'}>
                 {nameError && name.length === 0 ? 'Name must be entered' : ''}
                 {nameError && name.length === 1 ? 'Name must be at least two letters' : ''}
@@ -134,9 +146,9 @@ const MessageSection = () => {
                 onChange={(e) => handleChange(e)}
                 className={messageError ? 'error-border' : ''}
               />
-              <a className="btn-yellow" href="Subscribe.html" onClick={handleSubmit}>
+              <button type="submit" className="btn-yellow">
                 Send Message <i className="fa-regular fa-arrow-up-right"></i>
-              </a>
+              </button>
             </form>
           </div>
         </div>

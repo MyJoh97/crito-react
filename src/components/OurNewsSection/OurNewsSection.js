@@ -8,7 +8,6 @@ const OurNewsSection = () => {
   const navigate = useNavigate();
 
   useEffect(() => {
-    // Fetch data from the API
     fetch('https://win23-assignment.azurewebsites.net/api/articles')
       .then((response) => response.json())
       .then((data) => setArticles(data))

@@ -6,7 +6,6 @@ const NewsDetails = () => {
   const [article, setArticle] = useState(null);
 
   useEffect(() => {
-    // Fetch data for the specific article using the provided articleId
     fetch(`https://win23-assignment.azurewebsites.net/api/articles/${articleId}`)
       .then((response) => response.json())
       .then((data) => setArticle(data))
@@ -14,10 +13,10 @@ const NewsDetails = () => {
   }, [articleId]);
 
   if (!article) {
-    return <div>Loading...</div>; // You can add a loading indicator
+    return <div>Something went wrong.</div>;
   }
 
-  // Render detailed information about the article
+
   return (
     <div>
       <h2>{article.title}</h2>

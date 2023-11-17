@@ -23,7 +23,6 @@ const NewsDetails = () => {
       <h2>{article.title}</h2>
       <img src={article.imageSrc} alt={`Image for ${article.title}`} />
       <p>{article.content}</p>
-      {/* Display other details as needed */}
     </div>
   );
 };

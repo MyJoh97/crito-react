@@ -1,13 +1,13 @@
 import React from 'react';
 import { Link } from 'react-router-dom';
 
-const ArticleBoxes = ({ imageSrc, section, title, text, selection, onClick }) => {
+const ArticleBoxes = ({ imageSrc, section, title, text, selection, onClick, imageStyle }) => {
   const newsDetailsUrl = `/NewsDetails/${selection}`;
 
   return (
     <Link to={newsDetailsUrl} className="news">
       <div className="image-container-dates">
-        <img src={imageSrc} alt="Office environment" />
+        <img src={imageSrc} alt="" style={imageStyle} />
         <p>{section}</p>
         <strong>{title}</strong>
         <p>{text}</p>

@@ -2,15 +2,6 @@ import React, { useState, useEffect } from 'react';
 import ArticleBoxes from '../Assets/ArticleBoxes';
 import SmallNumberBoxes from '../Assets/SmallNumberBoxes';
 import { useNavigate } from 'react-router-dom';
-import NewsImage1 from '../../images/news-1.png';
-import NewsImage2 from '../../images/news-2.png';
-import NewsImage3 from '../../images/news-3.png';
-import NewsImage4 from '../../images/news-4.png';
-import NewsImage5 from '../../images/news-5.png';
-import NewsImage6 from '../../images/news-6.png';
-import NewsImage7 from '../../images/news-7.png';
-import NewsImage8 from '../../images/news-8.png';
-import NewsImage9 from '../../images/news-9.png';
 
 const OurNewsSection = () => {
   const [articles, setArticles] = useState([]);
@@ -25,33 +16,14 @@ const OurNewsSection = () => {
   }, []);
 
   const handleArticleClick = (articleId) => {
-    // Navigate to NewsDetails component with the selected article's ID
     navigate(`/NewsDetails/${articleId}`);
   };
 
-  const getImageForArticle = (articleId) => {
-    switch (articleId) {
-      case '1':
-        return NewsImage1;
-      case '2':
-        return NewsImage2;
-        case '3':
-          return NewsImage3;
-        case '4':
-          return NewsImage4;
-          case '5':
-        return NewsImage5;
-      case '6':
-        return NewsImage6;
-        case '7':
-        return NewsImage7;
-        case '8':
-        return NewsImage8;
-        case '9':
-        return NewsImage9;
-      default:
-        return null; 
+  const getImageStyles = (articleId) => {
+    if (articleId === '1') {
+      return { width: '100%', height: '300px' };
     }
+    return {}; 
   };
 
   return (
@@ -67,11 +39,10 @@ const OurNewsSection = () => {
               selection={article.id}
               title={article.title}
               imageSrc={article.imageUrl}
-              // day={article.day}
-              // month={article.month}
               section={article.category}
               text={article.content}
               onClick={() => handleArticleClick(article.id)}
+              imageStyle={getImageStyles(article.id)}
             />
           ))}
         </div>
